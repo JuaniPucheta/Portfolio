@@ -205,7 +205,7 @@ body {
   }
   
   .aboutme {
-    background: url("/dist/img/background.jpg")
+    background: url("./img/background.jpg")
       no-repeat;
     background-size: cover;
   }
