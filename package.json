@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "Portfolio personal",
-  "homepage": "https://juanipucheta.github.io",
+  "homepage": "https://juanipucheta.github.io/portfolio/",
   "main": "index.js",
   "scripts": {
     "deploy": "gh-pages -d dist"
