@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio personal",
+  "homepage": "https://juanipucheta.github.io",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuaniPucheta/portfolio.git"
+  },
+  "author": "JIP",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JuaniPucheta/portfolio/issues"
+  },
+  "dependencies": {
+    "gh-pages": "^5.0.0"
+  }
+}
