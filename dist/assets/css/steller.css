@@ -70,11 +70,15 @@ body {
   background-color: #f5f5f5;
 }
 
+/* Estilos para el skills-wrapper responsive */
 .skills {
   max-width: 68.75rem;
   margin: auto;
   text-align: center;
   margin-top: 2.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .skill-header {
@@ -97,6 +101,58 @@ body {
   padding: 20px;
   margin: 10px;
 }
+
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Ajustar el tamaño de la imagen en pantallas pequeñas */
+@media (max-width: 767.98px) {
+  .responsive-image {
+    max-width: 150px; /* Ajusta el tamaño deseado para pantallas pequeñas */
+    height: auto;
+  }
+}
+
+
+/* Ajuste de tamaño de los íconos en pantallas pequeñas */
+@media (max-width: 767.98px) {
+  .icon {
+    width: 9rem;
+    height: 8.5rem;
+  }
+
+  .icon-card {
+    padding: 15px;
+    margin: 5px;
+  }
+  
+  /* Agregar una regla para mostrar 3 skills por fila */
+  .skills-wrapper {
+    justify-content: space-between;
+  }
+  
+  /* Agregar margen a cada fila de skills */
+  .skills-wrapper > div {
+    margin-bottom: 20px;
+  }
+}
+
+/* Ajuste de tamaño de los íconos en pantallas más pequeñas */
+@media (max-width: 575.98px) {
+  .icon {
+    width: 7rem;
+    height: 6.5rem;
+  }
+
+  .icon-card {
+    padding: 10px;
+    margin: 5px;
+  }
+}
+
+/* Fin del skill-wrapper */
 
 /* Estilos para el botón Dark Theme */
 .btn.btn-dark-theme-toggle {
@@ -573,6 +629,14 @@ mark,
   border-radius: 0.25rem;
   max-width: 100%;
   height: auto;
+}
+
+/* Ajustar el tamaño de la imagen para dispositivos móviles */
+
+@media (max-width: 767.98px) {
+  #profileImage {
+    max-width: 50%; /* Puedes ajustar el valor según tus necesidades */
+  }
 }
 
 .figure {
@@ -11065,7 +11129,19 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 992px) {
   .section-title {
-    font-size: 30px;
+    font-size: 35px;
+  }
+}
+
+/* Estilos generales del texto */
+.pl-md-4 h5 {
+  font-size: 18px; /* Puedes ajustar el tamaño del texto según tus necesidades */
+}
+
+/* Ajustar el tamaño del texto para dispositivos móviles */
+@media (max-width: 767.98px) {
+  .pl-md-4 h5 {
+    font-size: 14px; /* Puedes ajustar el tamaño del texto para móviles */
   }
 }
 
@@ -11500,10 +11576,14 @@ pre {
 
 .page-footer {
   background-color: #1f4287;
+  color: #fff;
+  padding: 20px;
 }
 
 .page-footer .row {
-  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .page-footer p {
@@ -11529,6 +11609,31 @@ pre {
   }
   .page-footer .row .socials {
     margin: auto;
+  }
+}
+
+.socials-footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.social-item-footer {
+  margin-left: 15px;
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+/* Ajustar el tamaño de las social media en pantallas pequeñas */
+@media (max-width: 767.98px) {
+  .page-footer .row {
+    flex-direction: column;
+  }
+
+  .socials-footer {
+    justify-content: center;
+    margin-top: 10px;
   }
 }
 

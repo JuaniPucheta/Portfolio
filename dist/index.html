@@ -87,18 +87,17 @@
         </div>
     </header>
     <!-- End of Page Header -->
-    
+
     <!-- About section -->
     <section id="about" class="section">
         <div class="container mt-5">
             <div class="row text-center text-md-left">
                 <div class="col-md-3">
-                    <img src="assets/imgs/yo.jpg" alt="" class="img-thumbnail mb-4">
+                    <img src="assets/imgs/yo.jpg" alt="" class="img-thumbnail mb-4" id="profileImage">
                 </div>
                 <div class="pl-md-4 col-md-9">
                     <h6 class="title">Juan Ignacio Pucheta</h6>
                     <p class="subtitle">Engineer Systems Student & FullStack Developer</p>
-                    <br>
                     <h5>
                         Ingeniero en Sistemas de Información recibido en la UTN FRRo, Rosario, Argentina.
                         Desarrollador FullStack y diseñador enfocado en diseños web limpios.
@@ -119,114 +118,11 @@
     <section class="section" id="skills">     
         <div class="container text-center">
             <h6 class="subtitle"></h6>
-            <h6 class="section-title mb-4">
-                <img src="assets/imgs/icons/icons8-google-code-256.png">
-                My Knowledges
-            </h6>
-            <h5 class="mb-5 pb-4">
-                Estos son mis <strong>conocimientos</strong> en lenguajes de programación, herramientas y tecnologías.
-                <br> 
-                Además, tengo habilidades en el manejo de suites ofimáticas.
-            </h5>
+            <h4 class="section-title">My Knowledges & Skills</h4>
+            <img src="assets/imgs/icons/icons8-google-code-256.png" class="responsive-image">
 
-            <div class="skills-wrapper">
-                <div class="first-set animate__animated animate__pulse">
-                    <img
-                        src="assets/imgs/icons/icons8-nodejs-windows-11-color/icons8-nodejs-144.png"
-                        alt=""
-                        loading="lazy"
-                        class="icon icon-card"
-                    />
-                    <img
-                        src="assets/imgs/icons/icons8-python-color/icons8-python-144.svg"
-                        alt=""
-                        loading="lazy"
-                        class="icon icon-card"
-                    />
-                    <img
-                        src="assets/imgs/icons/icons8-angular-windows-11-color/icons8-angular-144.png"
-                        alt=""
-                        loading="lazy"
-                        class="icon icon-card"
-                    />
-                    <img
-                        src="assets/imgs/icons/icons8-java-color/icons8-java-144.svg"
-                        alt=""
-                        loading="lazy"
-                        class="icon icon-card"
-                    />
-                    <img
-                        src="assets/imgs/icons/icons8-php-office-l/icons8-php-160.png"
-                        alt=""
-                        loading="lazy"
-                        class="icon icon-card"
-                    />
-                </div>  
-                <div class="second-set animate__animated animate__pulse">
-                    <img
-                        src="assets/imgs/icons/icons8-postman-api-128.png"
-                        alt=""
-                        loading="lazy"
-                        class="icon icon-card"
-                    />
-                    <img
-                        src="assets/imgs/icons/icons8-django-color/icons8-django-144.svg"
-                        alt=""
-                        loading="lazy"
-                        class="icon icon-card"
-                    />
-                    <img
-                        src="assets/imgs/icons/icons8-mysql-color/icons8-mysql-144.svg"
-                        alt=""
-                        loading="lazy"
-                        class="icon icon-card"
-                    />
-                    <img
-                        src="assets/imgs/icons/anylogic.png"
-                        alt=""
-                        loading="lazy"
-                        class="icon icon-card"
-                    />
-                    <img
-                        src="assets/imgs/icons/icons8-firebase-color/icons8-firebase-144.svg"
-                        alt=""
-                        loading="lazy"
-                        class="icon icon-card"
-                    />
-                </div>
-
-                <div class="third-set animate__animated animate__pulse">
-                    <img
-                        src="assets/imgs/icons/icons8-git-color/icons8-git-144.svg"
-                        alt=""
-                        loading="lazy"
-                        class="icon icon-card"
-                    />
-                    <img
-                        src="assets/imgs/icons/icons8-html-color/icons8-html-144.svg"
-                        alt=""
-                        loading="lazy"
-                        class="icon icon-card"
-                    />
-                    <img
-                        src="assets/imgs/icons/icons8-css.svg"
-                        alt=""
-                        loading="lazy"
-                        class="icon icon-card"
-                    />
-                    <img
-                        src="assets/imgs/icons/icons8-js.svg"
-                        alt=""
-                        loading="lazy"
-                        class="icon icon-card"
-                    />
-                    <img
-                        src="assets/imgs/icons/icons8-microsoft-office-2019-windows-11-color/icons8-microsoft-office-2019-144.png"
-                        alt=""
-                        loading="lazy"
-                        class="icon icon-card"
-                    />
-                </div>
+            <!-- Llamado desde assets/js/skills.js -->
+            <div class="skills-wrapper" id="skillsWrapper">                
             </div>
             
         </div>
@@ -318,20 +214,20 @@
                     <p>Copyright <script>document.write(new Date().getFullYear())</script> &copy; <a href="https://github.com/JuaniPucheta" target="_blank">JuaniPucheta</a></p>
                 </div>
                 <div class="col-sm-6">
-                    <div class="socials">
-                      <a class="social-item" href="https://www.linkedin.com/in/juan-ignacio-pucheta/"><i class="ti-linkedin"></i></a>
-                      <a class="social-item" href="https://github.com/JuaniPucheta"><i class="ti-github"></i></a>
+                    <div class="socials-footer">
+                      <a class="social-item-footer" href="https://www.linkedin.com/in/juan-ignacio-pucheta/"><i class="ti-linkedin"></i></a>
+                      <a class="social-item-footer" href="https://github.com/JuaniPucheta"><i class="ti-github"></i></a>
                     </div>
                 </div>
             </div>
         </div>
-
     </footer> 
     <!-- End of page footer -->
 	
 	<!-- core  -->
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
     <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+    <script src="assets/js/skills.js"></script>
     <!-- bootstrap 3 affix -->
 	<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
 
